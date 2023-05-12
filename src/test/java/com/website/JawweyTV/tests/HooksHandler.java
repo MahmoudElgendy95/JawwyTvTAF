@@ -24,7 +24,7 @@ public class HooksHandler extends BaseTest {
         webDriverHandler = new WebDriverHandler();
         browser = new Browser();
         webDriverHandler.resetCache();
-        countries = new ConfigProperties("../Website-Framework/resources/config/countries.properties");
+        countries = new ConfigProperties("./resources/config/countries.properties");
         webDriverHandler.navigateTo("https://subscribe.jawwy.tv/eg-ar");
     }
 

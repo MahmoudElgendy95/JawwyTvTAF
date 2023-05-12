@@ -12,7 +12,7 @@ public class WebDriverHandler {
 
     private static WebDriver webDriver;
 
-    private static String browserConfigPath = "../Website-Framework/resources/config/configBrowser.properties";
+    private static String browserConfigPath = "./resources/config/configBrowser.properties";
     private String driverType = "drivertype";
 
     public WebDriverHandler() throws IOException {
