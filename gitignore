@@ -1,0 +1,15 @@
+# Default ignored files
+#/.idea/workspace.xml
+target/
+Digital-Framework.iml
+
+
+Website-Framework.iml
+Website-Framework/reports
+Website-Framework/resources/reports
+.idea
+output/
+reports/**
+
+**.html
+**.7z
