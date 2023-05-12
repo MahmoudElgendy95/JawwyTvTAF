@@ -1,0 +1,3 @@
+com\vodafone\vodafone_eshop_taf\eshop\pages\Dsl.class
+com\vodafone\vodafone_eshop_taf\eshop\tests\dsl\dsl_runner.class
+com\vodafone\vodafone_eshop_taf\eshop\tests\dsl\dsl_stepdef.class
