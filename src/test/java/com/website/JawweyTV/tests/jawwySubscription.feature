@@ -6,7 +6,6 @@ Feature: jawwy subscription
     And select "<country>" from countries list
     Then offer banner should be displayed
     And offer currency should be in "<currency>"
-
     Examples:
       | country  | currency | preferredLanguage |
       | country1En | AED      | en                |
@@ -19,7 +18,6 @@ Feature: jawwy subscription
     Then the lite plan and its button should be displayed
     And classic plan and its button should be displayed
     And premium plan and its button should be displayed
-
     Examples:
       | country  | preferredLanguage |
       | country1En | en                |
