@@ -1,0 +1,17 @@
+# Ignore build artifacts
+build/
+dist/
+node_modules/
+target/
+reports/
+resources/reports
+
+# Ignore log files
+*.log
+*.xml
+*.txt
+*.html
+
+# Ignore IDE specific files
+.vscode/
+.idea/
