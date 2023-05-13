@@ -4,6 +4,7 @@ import com.website.utilities.ConfigProperties;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.safari.SafariDriver;
 
 import java.io.IOException;
@@ -25,8 +26,15 @@ public class WebDriverHandler {
 
         switch (driverType) {
             case "chromedriver":
-                WebDriverManager.chromedriver().setup();
-                webDriver = new ChromeDriver();
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("start-maximized"); // open Browser in maximized mode
+                chromeOptions.addArguments("disable-infobars"); // disabling infobars
+                chromeOptions.addArguments("--disable-extensions"); // disabling extensions
+                //chromeOptions.addArguments("--disable-gpu"); // applicable to windows os only
+                chromeOptions.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+                chromeOptions.addArguments("--no-sandbox"); // Bypass OS security model
+
+                webDriver = WebDriverManager.chromedriver().capabilities(chromeOptions).create();
                 webDriver.manage().window().maximize();
                 break;
 
