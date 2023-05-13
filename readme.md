@@ -2,11 +2,12 @@
 ## Selenium- Java - Cucumber - TestNG 
 
 ## Steps To Run
-1- you do not need to worry aboud any configuration the framework do this for you By using 
+1- you do not need to worry about any configuration the framework do this for you By using 
     WebdriverManager and all directories are dynamic        
 2- in order to run this feature file you can directly run the testNG file called : websiteTestNG.xml        
 3- you also cauld execute the below line but maven should be installed on your device             
-> mvn clean install 
+> mvn clean test -DsuiteXmlFile=websiteTestNG
+
 
 
 
