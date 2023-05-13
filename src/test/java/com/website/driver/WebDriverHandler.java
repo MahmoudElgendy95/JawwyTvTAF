@@ -27,8 +27,9 @@ public class WebDriverHandler {
         switch (driverType) {
             case "chromedriver":
                 ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--remote-allow-origins=*", "--start-maximized");
-
+                chromeOptions.addArguments("--remote-allow-origins=*");
+                chromeOptions.addArguments("--disable-gpu");
+                chromeOptions.addArguments("--disable-dev-shm-usage");
                 webDriver = new ChromeDriver(chromeOptions);
                 webDriver.manage().window().maximize();
                 break;
