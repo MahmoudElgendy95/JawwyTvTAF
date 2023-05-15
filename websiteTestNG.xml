@@ -1,13 +1,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="JawwyTV Website">
+<suite name="STC-TV-Website">
     <listeners>
         <listener class-name="com.website.utilities.listeners.TestNGListener"/>
     </listeners>
 
-    <test name="JawwyTV subscription ">
+    <test name="STC-TV-subscription ">
         <classes>
             <class name="com.website.utilities.extent_report.ExtentReport"/>
-            <class name="com.website.JawweyTV.tests.jawwySubscriptionRunner"/>
+            <class name="com.website.StcTV.tests.STCSubscriptionRunner"/>
         </classes>
     </test>
 </suite>

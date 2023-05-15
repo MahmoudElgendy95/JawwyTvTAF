@@ -1,6 +1,6 @@
 package com.website.browser;
 
-import com.website.JawweyTV.jawwyWebsite;
+import com.website.StcTV.STcTVWebsite;
 import com.website.driver.WebDriverHandler;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -14,10 +14,10 @@ public class Browser {
 
     private final WebDriver webDriver = WebDriverHandler.getWebDriver();
 
-    public jawwyWebsite jawwyTV;
+    public STcTVWebsite stcTV;
 
     public Browser() {
-        jawwyTV = new jawwyWebsite();
+        stcTV = new STcTVWebsite();
     }
 
     public void sendLink(String link) {

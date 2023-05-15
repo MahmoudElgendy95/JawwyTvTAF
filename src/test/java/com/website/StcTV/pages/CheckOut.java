@@ -1,4 +1,4 @@
-package com.website.JawweyTV.pages;
+package com.website.StcTV.pages;
 
 import com.website.BasePage.BasePage;
 import org.openqa.selenium.By;

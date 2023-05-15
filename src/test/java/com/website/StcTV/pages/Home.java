@@ -1,4 +1,4 @@
-package com.website.JawweyTV.pages;
+package com.website.StcTV.pages;
 
 import com.website.BasePage.BasePage;
 import org.openqa.selenium.By;
@@ -26,6 +26,12 @@ public class Home extends BasePage {
 
     private final By premiumPlanButton = By.id("premium-selection");
 
+    private final By litePriceCurrency = By.id("currency-lite");
+
+    private final By classicPriceCurrency = By.id("currency-classic");
+
+    private final By premiumPriceCurrency = By.id("currency-premium");
+
     private By formCountryLocator(String country){return By.xpath("//span[contains(text(),'"+country+"')]");}
 
 
@@ -47,6 +53,13 @@ public class Home extends BasePage {
 
     public WebElement getPremiumPlanButton(){return findElement(premiumPlanButton);}
 
+    public WebElement getLitePriceCurrency(){return findElement(litePriceCurrency);}
+
+    public WebElement getClassicPriceCurrency(){return findElement(classicPriceCurrency);}
+
+    public WebElement getPremiumPriceCurrency(){return findElement(premiumPriceCurrency);}
+
+
     public void clickOnCountryButton(){findElement(countryButton).click();}
 
     public void clickOnLanguageButton(){findElement(languageButton).click();}
@@ -64,7 +77,7 @@ public class Home extends BasePage {
     }
 
     public CheckOut clickOnPremiumPlanButton(){
-        findElement(premiumPlanButton);
+        findElement(premiumPlanButton).click();
         return new CheckOut();
     }
 

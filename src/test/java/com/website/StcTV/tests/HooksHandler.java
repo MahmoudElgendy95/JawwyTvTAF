@@ -1,4 +1,4 @@
-package com.website.JawweyTV.tests;
+package com.website.StcTV.tests;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
@@ -25,7 +25,7 @@ public class HooksHandler extends BaseTest {
         browser = new Browser();
         webDriverHandler.resetCache();
         countries = new ConfigProperties("./resources/config/countries.properties");
-        webDriverHandler.navigateTo("https://subscribe.jawwy.tv/eg-ar");
+        webDriverHandler.navigateTo("https://subscribe.stctv.com/sa-ar");
     }
 
     @Before(order = 1)
